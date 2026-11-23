@@ -44,8 +44,11 @@ indicative prices.
 **Ranges, not quotes.** `total_min`–`total_max` is an aggregated market estimate range for a
 brand x repair pair — not a workshop quote and not a single observed transaction. Ranges are
 nationwide, before state-level labour adjustment. The `total_*` columns are the authoritative
-fields; `labor_*` / `parts_*` are an indicative decomposition and in 35 rows (2.9%) the component
-bounds do not sum exactly to the total bounds.
+fields; `labor_*` / `parts_*` are an indicative decomposition. The component bounds sum exactly
+to the total bounds in only **71 of 1,200 rows (5.9%)**; in the other 1,129 rows the total bounds
+were estimated independently of the labour/parts split. Always treat `total_*` as authoritative
+and the components as indicative. (Reproduce: count rows where
+`total_min != labor_min + parts_min` or `total_max != labor_max + parts_max`.)
 
 ## Summary statistics (computed from the CSV)
 
