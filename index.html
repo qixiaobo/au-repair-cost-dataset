@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Australian Car Repair Cost Dataset (2026) — 1,200 rows, 30 brands × 40 repairs, AUD</title>
+<meta name="description" content="Free open dataset: 1,200 Australian car repair price ranges (30 brands × 40 repair types) in AUD, with labour/parts split, provenance and confidence grades. CC BY 4.0 — please link to autorepaircost.net when you use it.">
+<link rel="canonical" href="https://qixiaobo.github.io/au-repair-cost-dataset/">
+<style>
+  :root{--ink:#1a2332;--muted:#5b6b7f;--line:#e3e8ef;--accent:#2f6fed;--bg:#f7f9fc;--card:#ffffff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:40px 20px 64px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 10px}
+  h1{font-size:30px;line-height:1.25;margin:0 0 12px}
+  h2{font-size:20px;margin:40px 0 12px;padding-top:24px;border-top:1px solid var(--line)}
+  p{margin:0 0 12px}
+  .sub{font-size:17px;color:var(--muted);margin-bottom:20px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:13px;color:var(--muted)}
+  .chip b{color:var(--ink)}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 0 8px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;font-size:15px}
+  .btn:hover{background:#1e56c8}
+  .btn-ghost{display:inline-block;color:var(--accent);text-decoration:none;font-weight:600;padding:12px 6px;font-size:15px}
+  .btn-ghost:hover{text-decoration:underline}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0 8px}
+  .tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .tile .v{font-size:24px;font-weight:700;margin-top:4px}
+  .tile .n{font-size:12px;color:var(--muted);margin-top:2px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:16px 0}
+  .caption{font-size:13px;color:var(--muted);margin-top:8px}
+  table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+  th{background:#f0f4fa;font-weight:600}
+  td.num,th.num{text-align:right}
+  code{background:#eef2f8;border-radius:4px;padding:1px 5px;font-size:13px}
+  pre{background:#0f172a;color:#e6edf7;border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.55;user-select:all}
+  pre.light{background:#f0f4fa;color:var(--ink);border:1px solid var(--line)}
+  .cite-note{background:#fff8e6;border:1px solid #f0d98c;border-radius:8px;padding:14px 16px;font-size:14px;margin:16px 0}
+  a{color:var(--accent)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .sha{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;word-break:break-all}
+  ul{margin:0 0 12px;padding-left:22px}
+  li{margin-bottom:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Open dataset · CC BY 4.0 · Australia</p>
+  <h1>Australian Car Repair Cost Dataset (2026)</h1>
+  <p class="sub">1,200 rows of Australian car repair price ranges — <b>30 brands × 40 repair types</b> — in AUD, with labour/parts split, per-row provenance and confidence grades. Free to use; just link back.</p>
+  <div class="chips">
+    <span class="chip"><b>1,200</b> rows</span>
+    <span class="chip"><b>30</b> brands</span>
+    <span class="chip"><b>40</b> repair types</span>
+    <span class="chip"><b>AUD</b> · GST-inclusive (AU market notes)</span>
+    <span class="chip">Data vintage <b>2026-11-11</b></span>
+    <span class="chip">Complete grid · zero missing cells</span>
+  </div>
+  <div class="cta">
+    <a class="btn" href="data/autorepaircost-au-repair-costs.csv" download>Download CSV (89 KB)</a>
+    <a class="btn-ghost" href="https://autorepaircost.net/dataset-2026">Canonical dataset page → autorepaircost.net</a>
+  </div>
+  <p class="caption">This page is a public data mirror maintained by the <a href="https://autorepaircost.net">AutoRepairCost</a> project. It is published as a citable open dataset: use it in articles, research, apps and dashboards — and please cite it with a link to <a href="https://autorepaircost.net">autorepaircost.net</a>.</p>
+
+  <div class="tiles">
+    <div class="tile"><div class="k">Median range midpoint</div><div class="v">A$630</div><div class="n">mean A$1,021.53</div></div>
+    <div class="tile"><div class="k">Cheapest row</div><div class="v">A$64–128</div><div class="n">mg · wheel alignment</div></div>
+    <div class="tile"><div class="k">Most expensive row</div><div class="v">A$4,000–10,000</div><div class="n">porsche · cvt transmission repair</div></div>
+    <div class="tile"><div class="k">Confidence</div><div class="v">98.2% medium</div><div class="n">22 high · 1178 medium — indicative ranges, not quotes</div></div>
+  </div>
+
+  <h2>Price-band distribution</h2>
+  <div class="card">
+    <svg viewBox="0 0 680 300" role="img" aria-label="Bar chart: distribution of 1,200 brand-by-repair price ranges by midpoint band, in Australian dollars" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="680" height="300" fill="#ffffff"/>
+  <line x1="56" y1="252.0" x2="640" y2="252.0" stroke="#e3e8ef" stroke-width="1"/><text x="48" y="256.0" text-anchor="end" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">0</text>
+  <line x1="56" y1="182.1" x2="640" y2="182.1" stroke="#e3e8ef" stroke-width="1" stroke-dasharray="3 3"/><text x="48" y="186.1" text-anchor="end" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">100</text>
+  <line x1="56" y1="112.1" x2="640" y2="112.1" stroke="#e3e8ef" stroke-width="1" stroke-dasharray="3 3"/><text x="48" y="116.1" text-anchor="end" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">200</text>
+  <line x1="56" y1="42.2" x2="640" y2="42.2" stroke="#e3e8ef" stroke-width="1" stroke-dasharray="3 3"/><text x="48" y="46.2" text-anchor="end" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">300</text>
+  <g><title>0–250 AUD: 162 rows (13.5%)</title><rect x="73" y="138.7" width="46" height="113.3" fill="#2f6fed" rx="2"/><text x="96" y="131.7" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">162</text><text x="96" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">0–250</text></g>
+  <g><title>250–500 AUD: 286 rows (23.8%)</title><rect x="137" y="52.0" width="46" height="200.0" fill="#2f6fed" rx="2"/><text x="160" y="45.0" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">286</text><text x="160" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">250–500</text></g>
+  <g><title>500–750 AUD: 262 rows (21.8%)</title><rect x="201" y="68.8" width="46" height="183.2" fill="#2f6fed" rx="2"/><text x="224" y="61.8" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">262</text><text x="224" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">500–750</text></g>
+  <g><title>750–1k AUD: 138 rows (11.5%)</title><rect x="265" y="155.5" width="46" height="96.5" fill="#2f6fed" rx="2"/><text x="288" y="148.5" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">138</text><text x="288" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">750–1k</text></g>
+  <g><title>1k–1.5k AUD: 119 rows (9.9%)</title><rect x="329" y="168.8" width="46" height="83.2" fill="#2f6fed" rx="2"/><text x="352" y="161.8" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">119</text><text x="352" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">1k–1.5k</text></g>
+  <g><title>1.5k–2k AUD: 48 rows (4.0%)</title><rect x="393" y="218.4" width="46" height="33.6" fill="#2f6fed" rx="2"/><text x="416" y="211.4" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">48</text><text x="416" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">1.5k–2k</text></g>
+  <g><title>2k–3k AUD: 103 rows (8.6%)</title><rect x="457" y="180.0" width="46" height="72.0" fill="#2f6fed" rx="2"/><text x="480" y="173.0" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">103</text><text x="480" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">2k–3k</text></g>
+  <g><title>3k–5k AUD: 74 rows (6.2%)</title><rect x="521" y="200.3" width="46" height="51.7" fill="#2f6fed" rx="2"/><text x="544" y="193.3" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">74</text><text x="544" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">3k–5k</text></g>
+  <g><title>5k+ AUD: 8 rows (0.7%)</title><rect x="585" y="246.4" width="46" height="5.6" fill="#2f6fed" rx="2"/><text x="608" y="239.4" text-anchor="middle" font-size="12" font-weight="600" fill="#1a2332" font-family="system-ui,sans-serif">8</text><text x="608" y="272" text-anchor="middle" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">5k+</text></g>
+  <text x="56" y="292" font-size="11" fill="#5b6b7f" font-family="system-ui,sans-serif">Price band of range midpoint (AUD) — count of brand × repair pairs</text>
+</svg>
+    <p class="caption">Distribution of all 1,200 brand × repair pairs by the midpoint of their total price range (AUD). Computed directly from the CSV. Nearly 60% of pairs sit under A$750; the long tail is transmission, engine and hybrid-battery work.</p>
+  </div>
+  <table>
+    <thead><tr><th>Band (AUD, midpoint)</th><th class="num">Rows</th><th class="num">Share</th></tr></thead>
+    <tbody>
+          <tr><td>0–250</td><td>162</td><td>13.5%</td></tr>
+          <tr><td>250–500</td><td>286</td><td>23.8%</td></tr>
+          <tr><td>500–750</td><td>262</td><td>21.8%</td></tr>
+          <tr><td>750–1k</td><td>138</td><td>11.5%</td></tr>
+          <tr><td>1k–1.5k</td><td>119</td><td>9.9%</td></tr>
+          <tr><td>1.5k–2k</td><td>48</td><td>4.0%</td></tr>
+          <tr><td>2k–3k</td><td>103</td><td>8.6%</td></tr>
+          <tr><td>3k–5k</td><td>74</td><td>6.2%</td></tr>
+          <tr><td>5k+</td><td>8</td><td>0.7%</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What's in the file</h2>
+  <table>
+    <thead><tr><th>Column</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>brand</code> / <code>repair</code></td><td>Brand slug (30 values) and repair-type slug (40 values)</td></tr>
+      <tr><td><code>total_min</code> / <code>total_max</code></td><td>Fitted total price range, AUD — the authoritative fields</td></tr>
+      <tr><td><code>labor_min</code> / <code>labor_max</code></td><td>Labour component, AUD (indicative decomposition)</td></tr>
+      <tr><td><code>parts_min</code> / <code>parts_max</code></td><td>Parts component, AUD (indicative decomposition)</td></tr>
+      <tr><td><code>source</code></td><td>Provenance: an <code>autoguru.com.au/…</code> page anchor, <code>estimated</code>, or <code>curated</code></td></tr>
+      <tr><td><code>confidence</code></td><td><code>high</code> (22 rows) or <code>medium</code> (1,178 rows)</td></tr>
+    </tbody>
+  </table>
+  <p class="caption">Tax treatment: the AU market on autorepaircost.net documents prices as GST-inclusive. Ranges are nationwide, before state labour adjustment. In 35 rows (2.9%) the labour+parts bounds do not sum exactly to the total bounds — use <code>total_*</code> as authoritative.</p>
+
+  <h2>Provenance &amp; uncertainty — read before relying on a row</h2>
+  <ul>
+    <li><b>175 rows (14.6%)</b> are URL-anchored to a real AutoGuru page: prefix the <code>source</code> value with <code>https://</code>, open it, and the quoted range should bracket our <code>total_min</code>–<code>total_max</code>.</li>
+    <li><b>1,007 rows (83.9%)</b> are model-estimated: a documented generic baseline × per-brand factor method, reproducible — not hand-invented.</li>
+    <li><b>18 rows (1.5%)</b> are curated from published Australian sources.</li>
+    <li><b>98.2% of rows are graded <code>medium</code></b>: indicative market ranges, not workshop quotes. Verify high-stakes figures against the anchored source page before relying on a single row.</li>
+  </ul>
+
+  <h2>Cite us</h2>
+  <div class="cite-note"><b>If you use this data, please link to <a href="https://autorepaircost.net">autorepaircost.net</a>.</b> Attribution is required by the CC BY 4.0 license. A link to the dataset page <a href="https://autorepaircost.net/dataset-2026">autorepaircost.net/dataset-2026</a> is ideal.</div>
+  <p>Plain text (click to select, then copy):</p>
+  <pre class="light">AutoRepairCost (2026). Australian Car Repair Cost Dataset: 30 brands x 40 repair types, 1,200 price ranges in AUD. https://autorepaircost.net/dataset-2026 — mirror: https://qixiaobo.github.io/au-repair-cost-dataset/</pre>
+  <p>BibTeX:</p>
+  <pre>@misc{autorepaircost2026au,
+  author       = {{AutoRepairCost Dataset Project}},
+  title        = {Australian Car Repair Cost Dataset: 30 brands x 40 repair types, 1,200 price ranges in AUD},
+  year         = {2026},
+  howpublished = {\url{https://autorepaircost.net/dataset-2026}},
+  note         = {Mirror: \url{https://qixiaobo.github.io/au-repair-cost-dataset/}. CC BY 4.0. Data vintage 2026-11-11}
+}</pre>
+  <p>One-line version for a blog post or README:</p>
+  <pre class="light">Data: [Australian Car Repair Cost Dataset](https://autorepaircost.net/dataset-2026) (CC BY 4.0).</pre>
+  <p class="caption">Machine-readable citation metadata: <a href="https://github.com/qixiaobo/au-repair-cost-dataset/blob/main/CITATION.cff">CITATION.cff</a> in the repository.</p>
+
+  <h2>License</h2>
+  <p><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — share and adapt for any purpose, including commercially, <b>provided you give appropriate credit with a link to <a href="https://autorepaircost.net">autorepaircost.net</a></b> and indicate if you changed anything. Full terms in the repository <a href="https://github.com/qixiaobo/au-repair-cost-dataset/blob/main/LICENSE">LICENSE</a> file.</p>
+
+  <h2>Verify the file</h2>
+  <pre class="light">shasum -a 256 data/autorepaircost-au-repair-costs.csv
+# d3a067191e26a4d5d462456279728df90b8143b4a25a085e1043da016e73cd87</pre>
+  <p class="caption">The same rows power the public tables at <a href="https://autorepaircost.net/llms.txt">autorepaircost.net/llms.txt</a> and <a href="https://autorepaircost.net/llms-full.txt">llms-full.txt</a> — an independent second reading of every brand × repair pair.</p>
+
+  <footer>
+    <p>Australian Car Repair Cost Dataset (2026) · maintained by the <a href="https://autorepaircost.net">AutoRepairCost</a> project · <a href="https://autorepaircost.net/dataset-2026">dataset page</a> · <a href="https://github.com/qixiaobo/au-repair-cost-dataset">source repository</a></p>
+    <p>CSV SHA-256: <span class="sha">d3a067191e26a4d5d462456279728df90b8143b4a25a085e1043da016e73cd87</span></p>
+    <p>Indicative market ranges, not workshop quotes. No personal data is published in this dataset.</p>
+  </footer>
+</div>
+</body>
+</html>

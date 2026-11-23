@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it and link to https://autorepaircost.net"
+title: "Australian Car Repair Cost Dataset: 30 brands x 40 repair types, 1,200 price ranges in AUD"
+authors:
+  - name: "AutoRepairCost Dataset Project"
+    website: "https://autorepaircost.net"
+version: "1.0.0"
+date-released: "2026-11-23"
+license: "CC-BY-4.0"
+url: "https://autorepaircost.net/dataset-2026"
+repository-code: "https://github.com/qixiaobo/au-repair-cost-dataset"
+keywords:
+  - "car repair costs"
+  - "Australia"
+  - "automotive"
+  - "maintenance pricing"
+  - "open data"
+  - "AUD"
+abstract: >-
+  1,200 rows of Australian car repair price ranges covering 30 brands and
+  40 repair types, in AUD. Each row gives a fitted total range plus labour
+  and parts components, with per-row provenance (URL-anchored, estimated,
+  or curated) and a confidence grade. Indicative market ranges, not
+  workshop quotes. Data vintage 2026-11-11. CC BY 4.0; attribution must
+  link to https://autorepaircost.net.
